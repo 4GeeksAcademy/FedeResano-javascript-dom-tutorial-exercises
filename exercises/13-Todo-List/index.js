@@ -1,7 +1,6 @@
 const list = document.querySelector("ul");
 const textInput = document.getElementById("addToDo");
 
-
 function deleteTask(event) {
     const clickedItem = event.target;
     if (clickedItem.matches(".fa-trash")) {
@@ -20,12 +19,10 @@ function addTask() {
     }
 }
 
-
 textInput.addEventListener("keypress", function (k) {
     if (k.key === "Enter") {
         addTask();
     }
 });
-
 
 list.addEventListener("click", deleteTask);
